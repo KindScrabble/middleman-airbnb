@@ -1,5 +1,5 @@
 #home {
-  background-color: #D23333;
+  background-color: $red;
   color: white;
   height: 100vh;
   display: flex;
@@ -10,8 +10,15 @@
     margin-top: 1.5em;
   }
   a {
-    color: rgba(0,0,0,0.4);
+    color: white;
     font-weight: bold;
     font-size: 16px;
-  }
+    &:hover {
+     color: darken($gray, 5%);
+     }
+    }
 }
+
+  .fa-heart {
+    color: $red;
+  }
